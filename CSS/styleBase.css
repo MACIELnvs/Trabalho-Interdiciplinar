@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0efef;
+}
+
+/* Barra de navegação superior */
+.navbar {
+  display: flex;
+  background-color: #013680;
+  padding: 10px;
+}
+
+/* Botões da navegação */
+.nav-item {
+  margin-right: 35px;
+  padding: 8px 16px;
+  background-color: #bfbfbf;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  font-weight: bold; 
+  font-style: italic; /* torna em itálico */
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.nav-proTech {
+  margin-right: 35px;
+  padding: auto;
+  color: #eded76;
+  font-weight: bold; /* negrito */
+  font-style: italic; /* itálico */
+  font-size: 2em;
+  text-align: center;
+  margin-top: auto;
+}
+
+.nav-logo {
+  margin-right: 40px; 
+  font-weight: bold;
+  font-style: italic; 
+  text-decoration: none;
+  cursor: pointer;
+  height: 20px 60px; /* altura do logo */
+}
+
+
+.nav-item.active {
+  background-color: #eded76; 
+  color: #ffffff;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Conteúdo principal */
+.content {
+  background-color: #eaeaea;
+  width: 100%;
+  min-height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: calc(100vh - 100px);
+}
+
+/* Barra inferior */
+footer {
+  background-color: #013680;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-style: italic; /* se desejar */
+  position: fixed;
+  bottom: 0;
+}
