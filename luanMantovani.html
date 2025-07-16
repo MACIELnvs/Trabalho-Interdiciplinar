@@ -7,13 +7,11 @@
 </head>
 <body>
     <h2>Resultado Final</h2>
-    <p>Aluno: <input type="text" id="inAluno"></p>
-    <p>Curso: <input type="text" id="inCurso" oninput="mostrarSugestoes()"></p>
+    <p>Aluno: <input type="text" id="inAluno" oninput="mostrarAlunos()"></p> 
+    <p>Curso: <input type="text" id="inCurso" oninput="mostrarCursos()"></p>
+    <div id= "cursos"></div>
+    <div id= "alunos"></div>
 
-    <button id="btResultado">Resultado</button>
-    <div id="sugestoes"></div>
-    <h3 id="outSaida"></h3>
-    <button id="btCalcular">Calcular</button>
 
     <script src="dadosCursos.js"></script>
     <script src="luanMantovani.js"></script>

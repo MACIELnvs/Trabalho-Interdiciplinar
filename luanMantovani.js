@@ -1,11 +1,7 @@
-const outSaida = document.getElementById("outSaida");
-const btCalcular = document.getElementById("btCalcular");
-const btResultado = document.getElementById("btResultado");
-
-function mostrarSugestoes() {
+function mostrarCursos() {
     let inCurso = document.getElementById("inCurso").value;
-    let divSugestoes = document.getElementById("sugestoes");
-    divSugestoes.innerHTML = ""; // Limpa sugestões antigas
+    let divCursos = document.getElementById("cursos");
+    divCursos.innerHTML = ""; // Limpa sugestões antigas
 
     // Percorre os vetores paralelos usando FOR
     for (let i = 0; i < vetCurso.length; i++) {
@@ -16,7 +12,7 @@ function mostrarSugestoes() {
 
         item.onclick = () => {
           document.getElementById("inCurso").value = vetCurso[i];
-          divSugestoes.innerHTML = "";
+          divCursos.innerHTML = "";
 
           // Você pode fazer mais coisas aqui, se quiser
           console.log("Aluno:", vetAluno[i], 
@@ -25,37 +21,29 @@ function mostrarSugestoes() {
                       "Faltas:", vetFalta[i]);
         };
 
-        divSugestoes.appendChild(item);
+        divCursos.appendChild(item);
       }
     }
   }
 
-  btCalcular.addEventListener("click", calculoNota2);
-
-  function calculoNota2(){
-    let strNota2 = "";
-
-        for(let i = 0; i < vetAluno.length; i++){
-            strNota2 += (vetProva2[i] * 0.4).toFixed(2) + "<br>";
-        }
-        
-        outSaida.innerHTML = strNota2;
-  }
-
-  btResultado.addEventListener("click", reprovados);
-
-  function reprovados(){
-    let strNota1 = 0;
-    let strNota2 = 0;
-    let strNota3 = 0;
-    let strNotaTotal = 0;
+function mostrarAlunos(){
+    let inAluno = document.getElementById("inAluno").value;
+    let divAlunos = document.getElementById("alunos");
+    divAlunos.innerHTML = "";
 
     for(let i = 0; i < vetAluno.length; i++){
-      strNota1 += (vetProva1[i] * 0.2).toFixed(2);
-      strNota2 += (vetProva2[i] * 0.4).toFixed(2);
-      strNota3 += (vetParticipacao[i] * 0.4).toFixed(2);
-      strNotaTotal = (strNota1).toFixed(2);
+      if(vetAluno[i].toUpperCase().includes(inAluno.toUpperCase()) && inAluno !== ""){
+        let nomes = document.createElement("div");
+        nomes.textContent = vetAluno[i];
+        nomes.style.cursor = "pointer";
+
+        nomes.onclick = () => {
+          document.getElementById("inAluno").value = vetAluno[i];
+          divAlunos.innerHTML = "";
+        }
+
+        divAlunos.appendChild(nomes);
+      }
     }
 
-    outSaida.innerHTML = strNotaTotal;
-  }
+}
