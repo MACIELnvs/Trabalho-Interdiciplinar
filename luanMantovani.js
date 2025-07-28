@@ -35,6 +35,7 @@ function mostrarAlunos(){
 
         nomes.onclick = () => {
           document.getElementById("inAluno").value = vetAluno[i];
+          document.getElementById("inCurso").value = vetCurso[i];
           divAlunos.innerHTML = "";
         }
 
