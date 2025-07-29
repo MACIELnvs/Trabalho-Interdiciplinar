@@ -48,7 +48,6 @@ function mostrarTabela() {
     thParticipacao.innerHTML = "Nota<br>Participação"; // participação do aluno
     thFaltas.innerHTML = "Percentual<br>de Faltas"; // faltas do aluno
     thMedia.innerHTML = "Média"; // média do aluno
-
     thSituacao.innerHTML = "Situação"; // situação do aluno "aprovado" ou "reprovado"
 
     trow.append(thNome);
@@ -94,10 +93,11 @@ function mostrarTabela() {
         tdCurso.innerHTML = vetCurso[i].toUpperCase();
         tdNota1.innerHTML = vtProva1[i]
         tdNota2.innerHTML = vetProva2[i];
-        tdParticipacao.innerHTML = vetParticipacao[i]
+        tdParticipacao.innerHTML = vetParticipacao[i];
+
         tdFaltas.innerHTML = percentualFaltas.toFixed(2) + "%"; // percentual de faltas com duas casas decimais
         tdMedia.innerHTML = resultadoMedia.toFixed(2); // média com duas casas decimais
-        tdSituacao.innerHTML = resultado;
+        tdSituacao.innerHTML = resultado; // mostra na tabela se o aluno está "aprovado" ou "reprovado"
 
 
         trow.append(tdNome);
