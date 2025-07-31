@@ -7,34 +7,49 @@ body {
 /* Barra de navegação superior */
 .navbar {
   display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribui logo/título para a esquerda, links para a direita */
   background-color: #013680;
   padding: 10px;
 }
+.nav-links {
+  display: flex;
+  gap: 15px;
+  margin-left: auto; /* Empurra os links para a direita */
+}
+
 
 /* Botões da navegação */
 .nav-item {
   margin-right: 35px;
   padding: 8px 16px;
-  background-color: #bfbfbf;
   border-radius: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 1.2em;
+  color: #ffffff;
+  font-size: 20px;
   font-weight: bold; 
-  font-style: italic; /* torna em itálico */
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-style: italic;
   text-decoration: none;
   cursor: pointer;
-  margin-top: 20px;
 }
+
 
 .nav-proTech {
   margin-right: 35px;
   padding: auto;
   color: #eded76;
+  background-color: #013680;
   font-weight: bold; /* negrito */
   font-style: italic; /* itálico */
   font-size: 2em;
   text-align: center;
   margin-top: auto;
+   transition: 1s all;
+}
+
+.nav-item.nav-item.active:hover {
+    background-color: #e1e154; 
+    transform: scale(1.2) rotate(4deg);
 }
 
 .nav-logo {
@@ -49,20 +64,11 @@ body {
 
 .nav-item.active {
   background-color: #eded76; 
-  color: #ffffff;
+  color: #013680;
   font-weight: bold;
   font-style: italic;
 }
 
-/* Conteúdo principal */
-.content {
-  background-color: #eaeaea;
-  width: 100%;
-  min-height: 300px;
-  padding: 20px;
-  box-sizing: border-box;
-  height: calc(100vh - 100px);
-}
 
 /* Barra inferior */
 footer {
@@ -74,7 +80,10 @@ footer {
   justify-content: center;
   color: white;
   font-weight: bold;
-  font-style: italic; /* se desejar */
+  font-style: italic;
   position: fixed;
   bottom: 0;
 }
+
+
+

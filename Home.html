@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!-- Arquivo: Home.html -->
-<!-- Autor: MACIELnvs -->       
+
 
 <!-- Informações do site -->
 <head>
@@ -14,26 +13,73 @@
     <link rel="stylesheet" href="CSS/styleHome.css" />
 </head>
 
-<!--texto corpo do site-->
-
 <body>
 
     <!-- Barra de navegação -->
-    <header>
-    <div class="navbar">
-        <img class="nav-logo" id="logo" src="logo.png" alt="logo do header">
-        <h3 class="nav-proTech">ProTech</h3>
-        
-        <a class="nav-item" href="Home.html">Início</a>
-        <a class="nav-item" href="StcAluno.html">Listar os Alunos</a>
-        <a class="nav-item active" href="desafio.html">Desafio</a>
+<header>
+  <div class="navbar">
+    <img class="nav-logo" id="logo" src="Imagens/logo.png" alt="logo do header">
+    <h3 class="nav-proTech">ProTech</h3>
+
+    <!-- Novo contêiner para os links -->
+    <div class="nav-links">
+      <a class="nav-item" href="Home.html">Home</a>
+      <a class="nav-item" href="StcAluno.html">listagem de Alunos</a>
+      <a class="nav-item active" href="desafio.html">Desafio</a>
     </div>
+  </div>
 </header>
 
 
+
 <!-- corpo do site -->
-<main>
-    <!-- Conteúdo aqui -->
+<main class="content">
+
+    <!--TODO conteudo do site vai aqui!!!-->
+    <P>
+        <img class="nav-logo" id="logo" src="Imagens/banner1.png" alt="logo do header">
+    
+    <h1 class="tituloCometario">Depoimento dos alunos</h1>
+    <p> &#8203; Conheça as experiências de alunos que transformaram suas vidas profissionais com nossos cursos na área de
+      tecnologia.</p>
+
+    <div class="comentario">
+      <img src="Imagens/ftJoao.jpg" alt="Foto do usuário" />
+      <div class="texto-comentario">
+        <strong>João Silva</strong><br>
+         O curso de JavaScript me ajudou muito a entender conceitos complexos
+          e já consegui aplicar em projetos reais. Super recomendado!
+      </div>
+    
+    </div>
+
+    <div class="comentario">
+      <img src="Imagens/ftMaria.jpg" alt="Foto do usuário" />
+      <div class="texto-comentario">
+        <strong>Maria Oliveira</strong><br>
+          A ProTech é incrível! O curso de Python foi muito bem estruturado e
+          os professores são super atenciosos. Aprendi muito!
+         Aprender Python foi essencial para minha carreira em análise de dados.
+          O curso é bem didático e fácil de acompanhar, adorei!
+      </div>
+    </div>
+
+   <div class="comentario">
+      <img src="Imagens/ftJesus.jpg" alt="Foto do usuário" />
+      <div class="texto-comentario">
+        <strong>Mário de Jesus</strong><br>
+        "O curso de HTML, CSS e JavaScript me deu confiança para criar minhas primeiras páginas do zero. Incrível ver minha evolução!"
+      </div>
+    </div>
+
+      <div class="comentario">
+      <img src="Imagens/ftAna.jpg" alt="Foto do usuário" />
+      <div class="texto-comentario">
+        <strong>Ana Souza</strong><br>
+        "Estava perdida com lógica de programação, mas o curso de fundamentos 
+        com JavaScript me fez entender de verdade. Vale cada minuto!"
+      </div>
+    
 </main>
 
 <!-- Rodapé -->
@@ -42,5 +88,6 @@
         <p>&copy; TSI 2025 </p>
     </footer>
     </div>
+    <script src="JS/dadosTabela.js"></script>
 </body>
 </html>

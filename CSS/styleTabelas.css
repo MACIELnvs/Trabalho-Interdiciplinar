@@ -1,0 +1,57 @@
+/* Conteúdo principal */
+.content {
+  background-color: #ffffff; /* destaque no meio do cinza */
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(1, 54, 128, 0.1); /* sombra azul discreta */
+  color: #222;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+main.content {
+  max-width: 1200px;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  text-align: justify;
+  text-align: center;
+}
+table{
+    margin: 40px auto;
+}
+thead{
+    background-color:  #f0f08b;
+    color: rgb(0, 0, 0);
+    font: bold;
+}
+th,td{
+    width: 300px;
+    border: 1px solid #999999;
+    padding: 3px;
+    font-size: 12px;
+}
+/* Estilo básico dos inputs */
+input[type="text"] {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 15px;
+  margin-right: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo quando o input está em foco */
+input[type="text"]:focus {
+  border-color: #013680;
+  box-shadow: 0 0 5px rgba(1, 54, 128, 0.3);
+  outline: none;
+}
