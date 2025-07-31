@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-
-<!-- Informações do site -->
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Situação do Aluno </title>
-    <!-- Links para os estilos CSS -->
     <link rel="stylesheet" href="CSS/resset.css" />
     <link rel="stylesheet" href="CSS/styleBase.css" />
     <link rel="stylesheet" href="CSS/styleStcAluno.css" />
+    <link rel="stylesheet" href="CSS/tabela.css">
 </head>
 
 <body>
-
-    <!-- Barra de navegação -->
     <header>
         <div class="navbar">
             <img class="nav-logo" id="logo" src="logo.png" alt="logo do header">
@@ -26,20 +20,22 @@
         </div>
     </header>
 
-
-    <!-- corpo do site -->
     <main>
-        <h1>Boletim do Aluno</h1>
+        <input type="text" id="inAluno" placeholder="Digite o nome do aluno">
+        <input type="text" id="inCurso" placeholder="Informe o curso">
+            <div id= "cursos"></div>
+            <div id= "alunos"></div>
         <table id="tabela"></table>
     </main>
 
-    <!-- Rodapé -->
-    <footer>
+    <div>
         <footer class="footer">
             <p>&copy; TSI 2025 </p>
         </footer>
-        </div>
-        <script src="tabela.js"></script>
+    </div>
+
+    <script src="dadosCursos.js"></script>
+    <script src="tabela.js"></script>
 </body>
 
 </html>
